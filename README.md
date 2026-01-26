@@ -1,5 +1,7 @@
 # Tenzies
 
+<img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/13575a37-28a4-449a-acfc-ef109e95d5d1" />
+
 A fun and interactive dice game built with React and Vite. The goal is to roll 10 dice until they all show the same value. Hold dice between rolls to freeze their values and work towards matching all dice.
 
 ## 🔗 Live Demo

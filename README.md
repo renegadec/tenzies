@@ -41,7 +41,7 @@ Check out the live version of the game here: [`https://tenzies0x.netlify.app/`](
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/renegadec/tenzies.git
 cd tenzies
 ```
 

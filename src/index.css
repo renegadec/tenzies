@@ -17,8 +17,8 @@ body {
 div#root {
   height: 100%;
   width: 100%;
-  max-height: 400px;
-  max-width: 400px;
+  max-height: 500px;
+  max-width: 500px;
 }
 
 main {
@@ -32,6 +32,8 @@ main {
 }
 
 .title {
+  font-family: Inter;
+  font-weight: 600;
   font-size: 40px;
   margin: 0;
 }
@@ -94,25 +96,50 @@ button.roll-dice {
 .time-container {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 40px;
+  margin-bottom: 10px;
 }
 
 .timer-container {
   text-align: center;
-  background: #0B2434;
-  color: #F5F5F5;
+  color: #000000;
   padding: 5px;
   border-radius: 5px;
 }
 
 .timer {
-  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.timer > p {
+  margin: 5px 0;
 }
 
 .best-time {
-  font-size: 15px;
-  background: #ece8e8;
   padding: 6px;
   border-radius: 5px;
   color: #000000;
+}
+
+.die-face {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  border: 2px solid #999;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.die-face.held {
+  background: #59E391;
+  border: 5px solid #59E391;
 }

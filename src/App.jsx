@@ -89,6 +89,14 @@ export default function App() {
 
     return (
         <main>
+            
+            
+            {gameWon && <Confetti />}
+            <div aria-live="polite" className="sr-only">
+                {gameWon && <p>Congratulations! You won! Press "New Game" to start again.</p>}
+            </div>
+            <h1 className="title">Tenzies</h1>
+            <p className="instructions">Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</p>
             <div className="time-container">
                 <Timer 
                     millisecs={milliseconds} 
@@ -100,18 +108,12 @@ export default function App() {
                 <BestTime 
                     bestTime={bestTime}
                 />
+                <RollsCount 
+                    rollsCount={rollsCount}
+                />
             </div>
 
-            <RollsCount 
-                rollsCount={rollsCount}
-            />
             
-            {gameWon && <Confetti />}
-            <div aria-live="polite" className="sr-only">
-                {gameWon && <p>Congratulations! You won! Press "New Game" to start again.</p>}
-            </div>
-            <h1 className="title">Tenzies</h1>
-            <p className="instructions">Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</p>
             <div className="dice-container">
                 {diceElements}
             </div>
